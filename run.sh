@@ -30,7 +30,7 @@ if [ -z "$WERCKER_DOTCLOUD_DEPLOY_DEPLOYNAME" ]; then
 fi
 
 # set up ssh key
-./add_key.sh ${HOME} ${WERCKER_DOTCLOUD_DEPLOY_KEYNAME}
+./add_key.sh "${HOME}" "${WERCKER_DOTCLOUD_DEPLOY_KEYNAME}"
 
 # install dotcloud cli
 sudo pip install -U dotcloudng
