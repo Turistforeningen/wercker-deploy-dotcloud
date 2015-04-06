@@ -7,6 +7,9 @@ when all tests are green.
 
 # Options
 
+- `keyname` name of SSH key file (required)
+- `dcemail` dotCloud user email (required)
+- `dcpassword` dotCloud user password (required)
 - `appname` dotCloud application name (required)
 - `deployname` dotCloud application deploy name (optional)
 
@@ -15,14 +18,14 @@ when all tests are green.
 ```yaml
 deploy:
   steps:
-    - add-ssh-key:
-      keyname: SSHKEY
-
     - add-to-known_hosts:
       hostname: dotcloudapp.com
       fingerprint: 8b:1d:ac:91:0c:92:a8:ea:3c:95:1b:d0:fb:df:f3:13
 
     - starefossen/dotcloud-deploy:
+      keyname: SSHKEY
+      dcemail: $DC_EMAIL
+      dcpassword: $DC_PASSWORD
       appname: $APPNAME
 ```
 
