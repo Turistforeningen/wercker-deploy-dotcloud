@@ -20,4 +20,5 @@ properties:
   deployname:
     type: string
     required: false
+    default: default
 
