@@ -39,5 +39,5 @@ sudo pip install -U dotcloudng
 dcuser setup
 
 # deploy application
-dcapp "${WERCKER_DOTCLOUD_DEPLOY_APPNAME}/${WERCKER_DOTCLOUD_DEPLOY_DEPLOYNAME}" push --deploy
+dcapp "${WERCKER_DOTCLOUD_DEPLOY_APPNAME}/${WERCKER_DOTCLOUD_DEPLOY_DEPLOYNAME}" push --deploy "${WERCKER_SOURCE_DIR}"
 
