@@ -11,7 +11,7 @@ properties:
   dcemail:
     type: string
     required: true
-  dcpassord:
+  dcpassword:
     type: string
     required: true
   appname:
