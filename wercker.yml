@@ -2,7 +2,7 @@ box: wercker/default
 build:
     steps:
         - shellcheck:
-            files: run.sh
+            files: *.sh
 
         - add-to-known_hosts:
             hostname: dotcloudapp.com
