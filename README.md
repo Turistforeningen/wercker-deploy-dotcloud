@@ -22,7 +22,7 @@ deploy:
       hostname: dotcloudapp.com
       fingerprint: 8b:1d:ac:91:0c:92:a8:ea:3c:95:1b:d0:fb:df:f3:13
 
-    - starefossen/dotcloud-deploy:
+    - Turistforeningen/dotcloud-deploy:
       keyname: SSHKEY
       dcemail: $DC_EMAIL
       dcpassword: $DC_PASSWORD
