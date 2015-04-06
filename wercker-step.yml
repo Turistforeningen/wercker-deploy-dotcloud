@@ -1,0 +1,14 @@
+name: dotcloud-deploy
+version: 1.0.0
+description: dotCloud deploy step for wercker. Deploy the code to your dotCloud application
+keywords:
+  - deploy
+  - dotcloud
+properties:
+  appname:
+    type: string
+    required: true
+  deployname:
+    type: string
+    required: false
+
