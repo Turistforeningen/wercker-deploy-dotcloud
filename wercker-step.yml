@@ -5,6 +5,15 @@ keywords:
   - deploy
   - dotcloud
 properties:
+  keyname:
+    type: string
+    required: true
+  dcemail:
+    type: string
+    required: true
+  dcpassord:
+    type: string
+    required: true
   appname:
     type: string
     required: true
