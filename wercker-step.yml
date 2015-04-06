@@ -1,5 +1,5 @@
 name: dotcloud-deploy
-version: 1.1.3
+version: 1.1.4
 description: dotCloud deploy step for wercker. Deploy the code to your dotCloud application
 keywords:
   - deploy
